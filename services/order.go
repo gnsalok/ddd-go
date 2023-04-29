@@ -40,6 +40,9 @@ func NewOrderService(cfgs ...OrderConfiguration) (*OrderService, error) {
 }
 
 // WithCustomerRepository applies a given customer repository to the OrderService
+// Given customer repository like : Memory, Mongo...
+// As memory/mongo repo satisfy customer.CustomerRepository interface
+// cr will act as object of memory/mongo type
 func WithCustomerRepository(cr customer.CustomerRepository) OrderConfiguration {
 	// return a function that matches the OrderConfiguration alias,
 	// You need to return this so that the parent function can take in all the needed parameters

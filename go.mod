@@ -5,7 +5,6 @@ go 1.17
 require (
 	github.com/google/uuid v1.3.0
 	go.mongodb.org/mongo-driver v1.7.1
-	golang.org/x/net v0.0.0-20210825183410-e898025ed96a
 )
 
 require (
